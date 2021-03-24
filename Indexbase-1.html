@@ -1,1 +1,23 @@
 <title>Tìm Số Thập Phân</title>
+
+function xetsothapphan(num) {
+var x =  num.toPrecision(2);
+if(num < 100) {
+  var x =  num.toPrecision(2);
+}else {
+  var x =  num.toPrecision(3);
+}
+var hundred = (x  > 100 ) ? x =  num.toPrecision(3) : "";
+var one = (x < 10 ) ? x =  num.toPrecision(1) : "";
+var ten = (x < 100 ) ? x =  num.toPrecision(2) : "";
+var thousand = (x > 1000) ?  x = num.toPrecision(4) : "";
+console.log(x * 1 );
+if ( x > num &&  x - 1 < num ) {
+  console.log("nó số thập phân")
+}else {
+  if ( x < num &&  x + 1 > num) {
+     console.log("nó số thập phân")
+  }
+}
+}
+xetsothapphan(158.4998)
