@@ -1,0 +1,17 @@
+// Tạo ra vòng lập For . 
+
+// Only change code below this line
+function countdown(n){
+  if(n < 1 ) {
+    return [];
+  }else {
+    let array = []
+    const countArray = countdown(n - 1);
+    countArray.unshift(n);
+    console.log(countArray);
+    return countArray;
+    //unshift thêm vào mảng đâu . 
+    // push thêm vào mảng cuối ; 
+  }
+}
+// Only change code above this line
