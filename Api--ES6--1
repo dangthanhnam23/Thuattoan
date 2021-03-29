@@ -1,0 +1,21 @@
+class login {
+  setlogin(value) {
+     this._value = value
+  }
+  get err() {
+   
+    return this.x
+  }
+  set err(value) {
+    value == obj.Name ? this.x = true : this.x = false;
+  }
+}
+const news = new login(45)
+news.err = "Phuchoa";
+
+
+/// bước chạy , 
+ get : 3 
+ set : 2 ;
+ setlogin : 1 ; 
+ 
