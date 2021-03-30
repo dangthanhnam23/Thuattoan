@@ -1,0 +1,18 @@
+function bubbleSort(array) {
+ for(i = 0 ;  i < array.length ; i++ ) {
+   for(j = 0 ; j < array.length - 1 - i ; j++) {
+     if(array[j] > array[j + 1]) {
+       [array[i] , array[j + 1]  = array[i + 1] , array[i]];
+     }
+   }
+ }
+  console.log(array);
+}
+var x =  bubbleSort([1, 4, 2, 8, 345, 123, 43, 32, 5643, 63, 123, 43, 2, 55, 1, 234, 92]);
+
+
+kết : 
+Tạo vòng for N  value I ; 
+tạo vòng for thứ 2 = ; value là N - 1 - I ; 
+So sách  : --lưu ý : J > J + 1 ; 
+Dùng ES6 đổi mảng ...
