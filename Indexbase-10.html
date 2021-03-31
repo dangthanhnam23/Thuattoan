@@ -1,0 +1,17 @@
+ const selectionSort = (array) => {
+  for( let i = 0; i < array.length - 1 ; i++ ) {
+    let min = i;
+    for(let j = i + 1 ; j < array.length ; j++ ) {
+     array[j] < min ? [array[i]  , array[min] = array[min] , array[i] ] : "";
+  }
+  return array;
+}
+}
+var x = selectionSort([1, 4, 2, 8, 345, 123, 43, 32, 5643, 63, 123, 43, 2, 55, 1, 234, 92]);
+console.log(x);
+// sắp xếp chọn . 
+// tạo ra 2 vòng for ; 
+//for1 = N - 1 ; 
+//for =  2 -> N ; 
+// biến chứa : min  = value for1; 
+// so sách value For2 < min ; hoán đổi value for1 với min;  
